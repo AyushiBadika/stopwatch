@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript:Analog Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/21c246e8b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      src="images/cat.gif"
+      alt=""
+      style="
+        position: absolute;
+        width: 5rem;
+        top: 8rem;
+        right: 11.5rem;
+        display: none;
+        transition: 3s linear;
+      "
+      class="cat"
+    />
+
+    <div class="clockAndBtns">
+      <div class="clock">
+        <div class="sec">
+          <div class="sc" id="sc"></div>
+        </div>
+      </div>
+      <div class="action">
+        <div class="lap" style="display: none">
+          <i class="fa-solid fa-flag"></i>
+        </div>
+        <div class="start">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="stop" style="display: none">
+          <i class="fa-solid fa-pause"></i>
+        </div>
+        <div class="reset" style="display: none">
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </div>
+      </div>
+    </div>
+    <div class="timerLaps">
+      <div class="timer">
+        <div class="timerHr">00 :</div>
+        <div class="timerMin">00 :</div>
+        <div class="timerSec">00</div>
+      </div>
+      <div class="laps">
+        <div class="lapsHeader">
+          <div class="lapHeading">Lap Position</div>
+          <div class="lapTimeHeading">Lap timer</div>
+        </div>
+        <hr style="width: 30rem; margin-bottom: 1rem" />
+        <div class="singleLaps"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
